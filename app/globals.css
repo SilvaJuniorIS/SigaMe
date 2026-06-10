@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #fffdf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fffdf7;
+  color: #334155;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #d6a84f;
+  color: #102a43;
+}
+
+.spiritual-light {
+  background:
+    radial-gradient(circle at 52% 20%, rgba(255, 253, 247, 0.88) 0, rgba(255, 253, 247, 0.18) 20%, transparent 42%),
+    linear-gradient(145deg, #0b1f33 0%, #102a43 50%, #f7f0e3 100%);
+}
+
+.page-shell {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+}
+
+.section-spacing {
+  @apply py-14 sm:py-16 lg:py-20;
+}
