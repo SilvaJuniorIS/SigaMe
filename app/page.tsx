@@ -19,8 +19,11 @@ export default function Home() {
       <DisclaimerBanner />
       <section className="section-spacing">
         <div className="page-shell">
-          <SectionHeading eyebrow="Tema da semana" title="Um estudo organizado para a sua semana">
-            <p>Comece com a referencia, pondere a mensagem central e leve uma pergunta para sua oracao pessoal.</p>
+          <SectionHeading eyebrow="Tema da semana" title={latestStudy.title}>
+            <p>
+              {latestStudy.weekRange}. Comece com a referencia, pondere a mensagem central e leve uma pergunta para sua
+              oracao pessoal.
+            </p>
           </SectionHeading>
           <div className="mt-8">
             <WeeklyThemeCard study={latestStudy} />
@@ -31,7 +34,7 @@ export default function Home() {
         <div className="page-shell grid gap-6 lg:grid-cols-[1fr_0.95fr]">
           <MessageCard
             title="Mensagem da semana"
-            message="A luz de Cristo nao apenas mostra o caminho: ela tambem aquece o coracao, amplia a esperanca e nos ajuda a dar o proximo passo com fe."
+            message={latestStudy.mainMessage}
           />
           <ReflectionQuestions questions={latestStudy.reflectionQuestions} />
         </div>

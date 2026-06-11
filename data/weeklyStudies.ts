@@ -14,24 +14,24 @@ export type WeeklyStudy = {
 
 export const weeklyStudies: WeeklyStudy[] = [
   {
-    id: "2026-01",
-    slug: "caminhar-com-deus-em-convenio",
-    weekRange: "Semana de 5 a 11 de janeiro de 2026",
-    title: "Caminhar com Deus em convenio",
-    scriptureReference: "Velho Testamento 2026",
+    id: "2026-23",
+    slug: "meu-coracao-se-regozija-no-senhor",
+    weekRange: "Semana de 7 a 13 de junho de 2026",
+    title: "Meu coracao se regozija no Senhor",
+    scriptureReference: "Rute; 1 Samuel 1-3",
     mainMessage:
-      "O Senhor nos convida a caminhar com Ele diariamente, permitindo que Sua luz oriente nossas escolhas, fortaleça nossa familia e aprofunde nossa conversao.",
+      "Mesmo em tempos de perda, espera ou incerteza, o Senhor pode transformar fidelidade humilde em consolo, direcao e alegria espiritual duradoura.",
     summary:
-      "Nesta semana, o estudo se concentra em reconhecer o Senhor como guia constante. Ao valorizar convenios, buscar revelacao pessoal e praticar obediencia com amor, individuos e familias podem sentir mais clareza espiritual no cotidiano.",
+      "O estudo desta semana destaca a lealdade de Rute, a oracao sincera de Ana e o chamado de Samuel. Essas historias mostram que Deus conhece pessoas comuns, ouve suplicas honestas e prepara servos dispostos a responder: fala, Senhor.",
     reflectionQuestions: [
-      "Como posso permitir que Cristo guie minhas decisoes nesta semana?",
-      "Que convenio preciso valorizar mais em minha vida?",
-      "Como minha familia pode estudar as escrituras com mais proposito?"
+      "Como posso demonstrar fidelidade ao Senhor mesmo quando o caminho parece incerto?",
+      "Que sentimentos ou pedidos preciso levar a Deus com mais sinceridade em oracao?",
+      "Como posso ouvir e responder melhor aos sussurros do Senhor nesta semana?"
     ],
     familyActivity:
-      "Escolham uma escritura da semana, leiam juntos e cada pessoa compartilhe uma forma pratica de seguir Jesus Cristo nos proximos dias.",
+      "Leiam juntos Rute 1 ou 1 Samuel 3 e conversem sobre uma escolha fiel feita por Rute, Ana ou Samuel. Depois, cada pessoa pode escrever uma forma simples de dizer sim ao Senhor esta semana.",
     teacherIdeas:
-      "Comece a aula com uma pergunta de aplicacao pessoal, convide os alunos a compartilharem experiencias e finalize com um compromisso simples para a semana.",
+      "Divida a conversa em tres palavras: lealdade, oracao e chamado. Convide a classe a identificar essas ideias em Rute, Ana e Samuel, e finalize com uma pergunta de aplicacao pessoal sobre ouvir o Senhor.",
     officialLink: "https://www.churchofjesuschrist.org/study/come-follow-me"
   },
   {
