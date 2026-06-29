@@ -14,6 +14,8 @@ export type WeeklyStudy = {
   imageAlt?: string;
 };
 
+const assetPath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const weeklyStudies: WeeklyStudy[] = [
   {
     id: "2026-27",
@@ -36,7 +38,7 @@ export const weeklyStudies: WeeklyStudy[] = [
       "Organize a conversa em três movimentos: escolher o Senhor, exercer fé por meio do sacrifício e ouvir o Espírito. Use as experiências de Elias e da viúva para levar a classe a formular uma aplicação pessoal concreta.",
     officialLink:
       "https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/27?lang=por",
-    image: "/images/elias-monte-carmelo.png",
+    image: `${assetPath}/images/elias-monte-carmelo.png`,
     imageAlt: "Ilustração original de Elias diante de um altar no monte Carmelo"
   },
   {
@@ -60,7 +62,7 @@ export const weeklyStudies: WeeklyStudy[] = [
       "Compare os milagres de Eliseu com o ministério de Jesus Cristo e convide a classe a identificar o que cada relato ensina sobre o Salvador. Termine com a experiência de Naamã e um convite à obediência humilde.",
     officialLink:
       "https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/28?lang=por",
-    image: "/images/naama-rio-jordao.png",
+    image: `${assetPath}/images/naama-rio-jordao.png`,
     imageAlt: "Ilustração original de Naamã saindo humildemente do rio Jordão"
   },
   {

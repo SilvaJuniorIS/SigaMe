@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: "Siga a Luz | Estudo semanal inspirado no Vem, e Segue-Me",
   description:
     "Mensagens, reflexoes e temas semanais para fortalecer o estudo pessoal e familiar das escrituras.",
-  metadataBase: new URL("https://sigaaluz.local"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   openGraph: {
     title: "Siga a Luz",
     description:
