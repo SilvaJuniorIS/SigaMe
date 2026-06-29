@@ -44,7 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${playfair.variable} ${inter.variable} ${merriweather.variable} font-sans antialiased`}>
+      <body
+        className={`${playfair.variable} ${inter.variable} ${merriweather.variable} font-sans antialiased`}
+        suppressHydrationWarning
+      >
         <Header />
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />

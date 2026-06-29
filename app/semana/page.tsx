@@ -5,10 +5,11 @@ import { ScriptureCard } from "@/components/ScriptureCard";
 import { SectionHeading } from "@/components/ui";
 import { TeacherSupportCard } from "@/components/TeacherSupportCard";
 import { WeeklyThemeCard } from "@/components/WeeklyThemeCard";
-import { getLatestStudy } from "@/data/weeklyStudies";
+import { getLatestStudy, weeklyStudies } from "@/data/weeklyStudies";
 
 export default function WeekPage() {
   const study = getLatestStudy();
+  const nextStudy = weeklyStudies[1];
 
   return (
     <>
@@ -23,12 +24,22 @@ export default function WeekPage() {
         </div>
       </section>
       <section className="section-spacing">
+        <div className="page-shell">
+          <SectionHeading eyebrow="Próxima semana" title={nextStudy.title}>
+            <p>{nextStudy.weekRange}</p>
+          </SectionHeading>
+          <div className="mt-8">
+            <WeeklyThemeCard study={nextStudy} />
+          </div>
+        </div>
+      </section>
+      <section className="bg-lightCream section-spacing">
         <div className="page-shell grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <ScriptureCard reference={study.scriptureReference} message={study.mainMessage} />
           <ReflectionQuestions questions={study.reflectionQuestions} />
         </div>
       </section>
-      <section className="bg-lightCream section-spacing">
+      <section className="section-spacing">
         <div className="page-shell grid gap-6 md:grid-cols-2">
           <FamilyActivityCard activity={study.familyActivity} />
           <TeacherSupportCard ideas={study.teacherIdeas} />

@@ -8,10 +8,11 @@ import { ReflectionQuestions } from "@/components/ReflectionQuestions";
 import { SectionHeading } from "@/components/ui";
 import { TeacherSupportCard } from "@/components/TeacherSupportCard";
 import { WeeklyThemeCard } from "@/components/WeeklyThemeCard";
-import { getLatestStudy } from "@/data/weeklyStudies";
+import { getLatestStudy, weeklyStudies } from "@/data/weeklyStudies";
 
 export default function Home() {
   const latestStudy = getLatestStudy();
+  const featuredStudies = weeklyStudies.slice(0, 2);
 
   return (
     <>
@@ -19,14 +20,15 @@ export default function Home() {
       <DisclaimerBanner />
       <section className="section-spacing">
         <div className="page-shell">
-          <SectionHeading eyebrow="Tema da semana" title={latestStudy.title}>
+          <SectionHeading eyebrow="Duas semanas de estudo" title="Mensagens para hoje e para a próxima semana">
             <p>
-              {latestStudy.weekRange}. Comece com a referencia, pondere a mensagem central e leve uma pergunta para sua
-              oracao pessoal.
+              Avance no seu ritmo: comece pelo tema atual e deixe o próximo estudo preparado para continuar.
             </p>
           </SectionHeading>
-          <div className="mt-8">
-            <WeeklyThemeCard study={latestStudy} />
+          <div className="mt-8 space-y-8">
+            {featuredStudies.map((study) => (
+              <WeeklyThemeCard study={study} key={study.id} />
+            ))}
           </div>
         </div>
       </section>
